@@ -13,7 +13,7 @@ module.exports = async(req, res) => {
             var unix = Number(response.body) + Number('19800');
             var timem = moment.unix(unix);
             res.json({
-                timezone: 'Asia/Kolkata',
+                timezone: 'Asia/Jakarta',
                 unixtime: unix,
                 date: timem.format('L'),
                 time: timem.format('LTS'),
