@@ -11,7 +11,7 @@ disana tertulis Number('25200');<br>angka apa itu? itu adalah angka untuk GMT+7 
 Bagaimana jika waktu GMT itu - (minus)?<br>
 contoh US/Pacific, berada di GMT -8, Kita tinggal hitung "3600x8", lalu mengubah kodenya menjadi pengurangan
 <br><br>
-**`var unix = Number(response.body) - Number('28.800');`**
+**`var unix = Number(response.body) - Number('28800');`**
 
 atau kamu bisa pakai converter GMT ke UNIX disini
 https://mininxd.github.io/timeAPI/docs/
