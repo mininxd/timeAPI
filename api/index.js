@@ -10,10 +10,16 @@ module.exports = async(req, res) => {
         if (error) {
             res.json({ result: 'false' });
         } else {
+        //
+            //Unix Time
             var unix = Number(response.body) + Number('25200');
             var timem = moment.unix(unix);
+
+            //API Response
             res.json({
+               //Timezone hanyalah string
                 timezone: 'Asia/Jakarta',
+                //Unix Time
                 unixtime: unix,
                 date: timem.format('L'),
                 time: timem.format('LTS'),
