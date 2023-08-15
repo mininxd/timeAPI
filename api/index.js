@@ -22,7 +22,11 @@ module.exports = async(req, res) => {
                 //Unix Time
                 unixtime: unix,
                 date: timem.format('L'),
-                timefull: timem.format('LTS'),
+                time: timem.format('LTS'),
+                time12: timem.format('hh:mm'),
+                time12a:timem.format('hh:mm a'),
+                time24: timem.format('H:mm'),
+                AMPM: timem.format('a'),
                 second: timem.format('ss'),
                 minute: timem.format('mm'),
                 hour: timem.format('hh'),
@@ -30,8 +34,7 @@ module.exports = async(req, res) => {
                 day: timem.format('D'),
                 month: timem.format('M'),
                 year: timem.format('yyyy'),
-                time12: timem.format('hh:mm'),
-                time24: timem.format('H:mm')
+                
             });
         };
     });
