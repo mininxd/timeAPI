@@ -10,7 +10,7 @@ module.exports = async(req, res) => {
         if (error) {
             res.json({ result: 'false' });
         } else {
-            var unix = Number(response.body) + Number('19800');
+            var unix = Number(response.body) + Number('25200');
             var timem = moment.unix(unix);
             res.json({
                 timezone: 'Asia/Jakarta',
