@@ -1,1 +1,42 @@
-a
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script defer src="./script.js"></script>
+  </head>
+  <style>
+  * {
+  	font-family: Sans-Serif;
+  	font-weight: 600;
+  }
+  body { margin: 5em 1em 0 1em;
+  line-height: 1.8em;
+  }
+    .container {
+      margin: 1em;
+    }
+    input,textarea {
+    	border: solid 2px black;
+    	margin-left:2em;
+    	font-size: 30;
+      height: 40px;
+      width: 60%;
+    }
+  </style>
+  
+  <body>
+  <div id="container">
+  	<label>Input your GMT :<br>
+    <input type="number" id="input" />
+    </label>
+    <br>
+    <label>Your UNIX Time :<br>
+    <textarea id="hasil" readonly></textarea>
+    </label>
+    <br>
+    <br>
+    
+    <button style="margin-left:75%" onclick="jumlah()">click me</button>
+  </div>
+</html>
