@@ -16,4 +16,4 @@ contoh US/Pacific, berada di GMT -8, Kita tinggal hitung "3600x8", lalu mengubah
 atau kamu bisa pakai converter GMT ke UNIX disini
 https://mininxd.github.io/timeAPI/docs/
 
-**baru**, kamu bisa pakai preset GMT pada tz-data.js
+#### **baru**, kamu bisa pakai preset GMT pada tz-data.js
