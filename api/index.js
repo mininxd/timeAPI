@@ -22,8 +22,16 @@ module.exports = async(req, res) => {
                 //Unix Time
                 unixtime: unix,
                 date: timem.format('L'),
-                time: timem.format('LTS'),
-                day: timem.format('dddd')
+                timefull: timem.format('LTS'),
+                second: timem.format('ss'),
+                minute: timem.format('mm'),
+                hour: timem.format('hh'),
+                dayname: timem.format('dddd'),
+                day: timem.format('D'),
+                month: timem.format('M'),
+                year: timem.format('yyyy'),
+                time12: timem.format('hh:mm'),
+                time24: timem.format('H:mm')
             });
         };
     });
