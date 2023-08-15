@@ -1,26 +1,23 @@
 {
     "name": "time-api",
     "version": "1.0.0",
-    "description": "Indian Time API",
+    "description": "TimeAPI based on UNIX",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cachecleanerjeet/time-api.git"
+        "url": ""
     },
     "dependencies": {
         "moment": "^2.29.1",
         "request": "^2.88.2"
     },
     "keywords": [
-        "time",
-        "time-api",
-        "indian-time-api",
-        "free-time-api"
+        ""
     ],
-    "author": "Tuhin Kanti Pal",
-    "license": "Apache-2.0",
+    "author": "",
+    "license": "",
     "bugs": {
-        "url": "https://github.com/cachecleanerjeet/time-api/issues"
+        "url": ""
     },
-    "homepage": "https://github.com/cachecleanerjeet/time-api#readme"
+    "homepage": "mininxd.my.id"
 }
