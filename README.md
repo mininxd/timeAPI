@@ -9,12 +9,12 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 <br>
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
 
+<br>
 
+<br>
 
-
-
-
-##Tutorial
+<br>
+## Tutorial
 ### Cara mengubah TimeZone jika kamu deploy ke vercel
 
 dalam file /api/index.js terdapat kode<br>
