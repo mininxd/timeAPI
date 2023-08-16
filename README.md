@@ -9,17 +9,21 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 <br>
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
 
-### Cara mengubah TimeZone
-> karena pada API ini Timezone default GMT7 atau WIB,
-> jadi saya mohon maaf untuk selain WIB harus deploy sendiri ke vercel, dan berikut cara mengaturnya
+
+
+
+
+
+##Tutorial
+### Cara mengubah TimeZone jika kamu deploy ke vercel
 
 dalam file /api/index.js terdapat kode<br>
 `var unix = Number(response.body) + Number('GMT7');`<br>
 kamu tinggal ubah GMT7nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
 `GMT7 = WIB` `GMT8 = WITA` `GMT9 = WIT`<br>
 
-jika kamu mau kustomisasi angka unix, kamu bisa pakai converter GMT ke UNIX disini
-https://mininxd.github.io/timeAPI/docs/
+**Jika mau kustomisasi angka unix
+kamu bisa pakai converter GMT ke UNIX [disini](https://mininxd.github.io/timeAPI/docs/)**
 <br>
 <br>
 ### bagaimana jika GMT/Zonawaktu itu GMT- (ada minusnya)?
