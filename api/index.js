@@ -48,6 +48,7 @@ module.exports = async (req, res) => {
 
       //API Response
       res.json({
+        docs: "https://github.com/mininxd/timeapi/",
         //Timezone hanyalah string
         timezone: "Asia/Jakarta",
         //Unix Time
