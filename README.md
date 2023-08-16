@@ -1,5 +1,4 @@
-# TimeAPI
-
+# TimeAPI 
 TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 
 [![GitHub tag](https://img.shields.io/github/tag/mininxd/timeAPI?include_prereleases=&sort=semver&color=blue)](https://github.com/mininxd/timeAPI/releases/)
@@ -23,3 +22,6 @@ atau kamu bisa pakai converter GMT ke UNIX disini
 https://mininxd.github.io/timeAPI/docs/
 
 #### **baru**, kamu bisa pakai preset GMT pada tz-data.js
+
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmininxd%2FtimeAPI)
