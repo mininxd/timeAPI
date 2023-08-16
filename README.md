@@ -5,7 +5,9 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 [![GitHub tag](https://img.shields.io/github/tag/mininxd/timeAPI?include_prereleases=&sort=semver&color=blue)](https://github.com/mininxd/timeAPI/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mininxd/timeAPI/blob/main/LICENSE)
 [![issues - timeAPI](https://img.shields.io/github/issues/mininxd/timeAPI)](https://github.com/mininxd/timeAPI/issues)
-
+<br>
+![server date](https://img.shields.io/badge/dynamic/json?label=server+date&query=date&url=https%3A%2F%2Ftimeapi.mininxd.my.id%2F)
+![server time](https://img.shields.io/badge/dynamic/json?label=server+time&query=time&url=https%3A%2F%2Ftimeapi.mininxd.my.id%2F)
 
 ### Cara mengubah waktu Unix
 
