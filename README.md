@@ -1,6 +1,8 @@
 # TimeAPI 
 TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 
+
+
 [![GitHub tag](https://img.shields.io/github/tag/mininxd/timeAPI?include_prereleases=&sort=semver&color=blue)](https://github.com/mininxd/timeAPI/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/mininxd/timeAPI/blob/main/LICENSE)
 [![issues - timeAPI](https://img.shields.io/github/issues/mininxd/timeAPI)](https://github.com/mininxd/timeAPI/issues)
@@ -8,6 +10,7 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
 
 ### Cara mengubah TimeZone
+##### karena pada API ini Timezone default GMT7 atau WIB
 
 dalam file /api/index.js terdapat kode<br>
 `var unix = Number(response.body) + Number('GMT7');`<br>
