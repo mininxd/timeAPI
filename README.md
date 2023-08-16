@@ -10,7 +10,8 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
 
 ### Cara mengubah TimeZone
-##### karena pada API ini Timezone default GMT7 atau WIB
+> karena pada API ini Timezone default GMT7 atau WIB,
+> jadi saya mohon maaf untuk selain WIB harus deploy sendiri ke vercel, dan berikut cara mengaturnya
 
 dalam file /api/index.js terdapat kode<br>
 `var unix = Number(response.body) + Number('GMT7');`<br>
