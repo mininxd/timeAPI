@@ -41,32 +41,88 @@ module.exports = async (req, res) => {
     } else {
       //
       //Unix Time
-      var unix = Number(response.body) + Number(GMT7);
+      var uwib = Number(response.body) + Number(GMT7);
+      var uwita = Number(response.body) + Number(GMT8);
+      var uwit = Number(response.body) + Number(GMT9);
       //change the plus into minus if youre on GMT-1 and up
 
-      var timem = moment.unix(unix);
+      var wibnix = moment.unix(uwib);
+      var witanix = moment.unix(uwita);
+      var witnix = moment.unix(uwit);
 
       //API Response
       res.json({
         docs: "https://github.com/mininxd/timeapi/",
-        //Timezone hanyalah string
-        timezone: "Asia/Jakarta",
-        //Unix Time
-        unixtime: unix,
-        date: timem.format("L"),
-        time: timem.format("LTS"),
-        time12: timem.format("hh:mm"),
-        time12a: timem.format("hh:mm a"),
-        time24: timem.format("H:mm"),
-        AMPM: timem.format("a"),
-        second: timem.format("ss"),
-        minute: timem.format("mm"),
-        hour: timem.format("hh"),
-        dayname: timem.format("dddd"),
-        day: timem.format("D"),
-        month: timem.format("M"),
-        year: timem.format("yyyy"),
+        wib: [
+          {
+            //Timezone hanyalah string
+            timezone: "Asia/Jakarta",
+
+            //Unix Time
+            unixtime: uwib,
+            date: wibnix.format("L"),
+            time: wibnix.format("LTS"),
+            time12: wibnix.format("hh:mm"),
+            time12a: wibnix.format("hh:mm a"),
+            time24: wibnix.format("H:mm"),
+            AMPM: wibnix.format("a"),
+            second: wibnix.format("ss"),
+            minute: wibnix.format("mm"),
+            hour: wibnix.format("hh"),
+            dayname: wibnix.format("dddd"),
+            day: wibnix.format("D"),
+            month: wibnix.format("M"),
+            year: wibnix.format("yyyy"),
+          },
+        ],
+        wita: [
+          {
+            //Timezone hanyalah string
+            timezone: "Asia/NTT",
+
+            //Unix Time
+            unixtime: uwita,
+            date: witanix.format("L"),
+            time: witanix.format("LTS"),
+            time12: witanix.format("hh:mm"),
+            time12a: witanix.format("hh:mm a"),
+            time24: witanix.format("H:mm"),
+            AMPM: witanix.format("a"),
+            second: witanix.format("ss"),
+            minute: witanix.format("mm"),
+            hour: witanix.format("hh"),
+            dayname: witanix.format("dddd"),
+            day: witanix.format("D"),
+            month: witanix.format("M"),
+            year: witanix.format("yyyy"),
+          },
+        ],
+        wit: [
+          {
+            //Timezone hanyalah string
+            timezone: "Asia/Jayapura",
+
+            //Unix Time
+            unixtime: uwit,
+            date: witnix.format("L"),
+            time: witnix.format("LTS"),
+            time12: witnix.format("hh:mm"),
+            time12a: witnix.format("hh:mm a"),
+            time24: witnix.format("H:mm"),
+            AMPM: witnix.format("a"),
+            second: witnix.format("ss"),
+            minute: witnix.format("mm"),
+            hour: witnix.format("hh"),
+            dayname: witnix.format("dddd"),
+            day: witnix.format("D"),
+            month: witnix.format("M"),
+            year: witnix.format("yyyy"),
+          },
+        ],
+
+        //end of JSON
       });
     }
   });
 };
+            
