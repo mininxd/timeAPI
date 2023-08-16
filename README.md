@@ -46,6 +46,6 @@ Tinggal ubah kode ini menjadi pengurangan<br>
 <center>
  
   [![Donate - Saweria](https://img.shields.io/badge/Donate-Saweria-2ea44f?style=for-the-badge)](https://saweria.co/mininxd)
-  
+  [![Paypal](https://img.shields.io/badge/Paypal-blue?style=for-the-badge&logo=paypal)](https://paypal.me/mininxd?country.x=ID&locale.x=en_US)
 </center>
 
