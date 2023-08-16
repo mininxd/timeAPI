@@ -7,12 +7,12 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 <br>
 ![maintained - yes](https://img.shields.io/badge/maintained-yes-blue)
 
-### Cara mengubah zonawaktu 
+### Cara mengubah TimeZone
 
 dalam file /api/index.js terdapat kode<br>
 `var unix = Number(response.body) + Number('GMT7');`<br>
-kamu tinggal ubah GMT7nya saja, contoh <br>
-`GMT7 = WIB` `GMT8 = WITA` `GMT9= WIT`<br>
+kamu tinggal ubah GMT7nya saja yang sudah disediakan dalam tz-data.js,<br> contoh: <br>
+`GMT7 = WIB` `GMT8 = WITA` `GMT9 = WIT`<br>
 jika kamu mau kustomisasi angka unix, kamu bisa pakai converter GMT ke UNIX disini
 https://mininxd.github.io/timeAPI/docs/
 <br>
