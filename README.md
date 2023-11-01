@@ -39,12 +39,10 @@ var unixWib = Number(response.body) + Number(GMT7);
       var unixWit = Number(response.body) + Number(GMT9);
 ```
 <br>
-kamu tinggal ubah "GMT0"nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
-`GMT7 = WIB` `GMT8 = WITA` `GMT9 = WIT`<br>
-
-
-Jika kamu mau pakai GMT lain yang tidak tertera pada tz-data, kamu bisa pakai concerter UNIX
-** [disini](https://mininxd.github.io/timeAPI/docs/)**
+kamu tinggal ubah "GMT0"nya saja yang sudah disediakan dalam tz-data.js,<br>
+<br>
+Jika kamu mau pakai GMT lain yang tidak tertera pada tz-data, kamu bisa pakai converter UNIX
+[disini](https://mininxd.github.io/timeAPI/docs/)
 <br>
 <br>
 ### bagaimana jika GMT/Zonawaktu itu GMT- (ada minusnya)?
