@@ -35,14 +35,16 @@ var unixTime = Number(response.body) + Number(GMT0);
 beserta 
 ```javascript
 var unixWib = Number(response.body) + Number(GMT7);
-      var unixWita = Number(response.body) + Number(GMT8);
-      var unixWit = Number(response.body) + Number(GMT9);
+var unixWita = Number(response.body) + Number(GMT8);
+var unixWit = Number(response.body) + Number(GMT9);
 ```
 <br>
-kamu tinggal ubah "GMT0"nya saja yang sudah disediakan dalam tz-data.js,<br>
+kamu tinggal ubah "GMT"nya saja yang sudah disediakan dalam tz-data.js
 <br>
+
+
 Jika kamu mau pakai GMT lain yang tidak tertera pada tz-data, kamu bisa pakai converter UNIX
-[disini](https://mininxd.github.io/timeAPI/docs/)
+**[disini](https://mininxd.github.io/timeAPI/docs/)**
 <br>
 <br>
 ### bagaimana jika GMT/Zonawaktu itu GMT- (ada minusnya)?
