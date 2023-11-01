@@ -30,24 +30,31 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 
 dalam file /api/index.js terdapat kode<br>
 ```javascript
-var unix = Number(response.body) + Number('GMT7');
+var unixTime = Number(response.body) + Number(GMT0);
 ````
+beserta 
+```javascript
+var unixWib = Number(response.body) + Number(GMT7);
+      var unixWita = Number(response.body) + Number(GMT8);
+      var unixWit = Number(response.body) + Number(GMT9);
+```
 <br>
-kamu tinggal ubah "GMT7"nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
+kamu tinggal ubah "GMT0"nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
 `GMT7 = WIB` `GMT8 = WITA` `GMT9 = WIT`<br>
 
-**Jika mau kustomisasi angka unix
-kamu bisa pakai converter GMT ke UNIX [disini](https://mininxd.github.io/timeAPI/docs/)**
+
+Jika kamu mau pakai GMT lain yang tidak tertera pada tz-data, kamu bisa pakai concerter UNIX
+** [disini](https://mininxd.github.io/timeAPI/docs/)**
 <br>
 <br>
 ### bagaimana jika GMT/Zonawaktu itu GMT- (ada minusnya)?
 Tinggal ubah kode 
 ```javascript
-var unix = Number(response.body) + Number('GMT7');
+var unixTime = Number(response.body) + Number(GMT0);
 ```
 menjadi pengurangan<br>
 ```javascript
-var unix = Number(response.body) - Number('GMT7');
+var unixTime = Number(response.body) - Number(GMT7);
 ```
 
 <br>
