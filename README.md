@@ -29,8 +29,11 @@ TimeAPI adalah Interface Program untuk waktu dan tanggal, dengan berbasis unix
 ### Cara mengubah TimeZone jika kamu deploy ke vercel
 
 dalam file /api/index.js terdapat kode<br>
-`var unix = Number(response.body) + Number('GMT7');`<br>
-kamu tinggal ubah GMT7nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
+```javascript
+var unix = Number(response.body) + Number('GMT7');
+````
+<br>
+kamu tinggal ubah "GMT7"nya saja yang sudah disediakan dalam tz-data.js,<br> GMT berapa untuk WIB, WITA, dan WIT?<br>
 `GMT7 = WIB` `GMT8 = WITA` `GMT9 = WIT`<br>
 
 **Jika mau kustomisasi angka unix
@@ -38,8 +41,14 @@ kamu bisa pakai converter GMT ke UNIX [disini](https://mininxd.github.io/timeAPI
 <br>
 <br>
 ### bagaimana jika GMT/Zonawaktu itu GMT- (ada minusnya)?
-Tinggal ubah kode ini menjadi pengurangan<br>
-`var unix = Number(response.body) - Number('GMT7');`
+Tinggal ubah kode 
+```javascript
+var unix = Number(response.body) + Number('GMT7');
+```
+menjadi pengurangan<br>
+```javascript
+var unix = Number(response.body) - Number('GMT7');
+```
 
 <br>
 
