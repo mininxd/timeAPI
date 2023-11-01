@@ -1,3 +1,5 @@
+//export TZ berbasis Unix
+
 export const GMT0 = "0";
 export const GMT1 = "3600";
 export const GMT2 = "7200";
