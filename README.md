@@ -54,7 +54,7 @@ var unixTime = Number(response.body) + Number(GMT0);
 ```
 menjadi pengurangan<br>
 ```javascript
-var unixTime = Number(response.body) - Number(GMT7);
+var unixTime = Number(response.body) - Number(GMT0);
 ```
 
 <br>
