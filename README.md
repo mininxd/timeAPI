@@ -1,1 +1,1 @@
-___https://timeapi.mininxd.my.id/?gmt=___
+___https://timeapi.mininxd.my.id/?gmt=___ {query}
