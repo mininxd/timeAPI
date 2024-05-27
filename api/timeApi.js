@@ -22,7 +22,7 @@ module.exports = function(req) {
           return;
         }
 
-        const newTime = moment.unix(time.unix() + (gmtOffset * 3600));
+        const newTime = moment.unix(time + (req.query.gmt * 3600));
         resolve({
           "gmt": gmtOffset,
           "hour": newTime.format("HH"),
