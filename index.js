@@ -9,7 +9,6 @@ app.register(require('@fastify/static'), {
   root: path.join(__dirname, 'api'),
 })
 
-
 app.get('/', async (req, res) => {
 const timeApi = require('./api/timeApi.js');
   const gmtOffset = req.query.gmt;
