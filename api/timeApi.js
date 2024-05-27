@@ -6,6 +6,7 @@ module.exports = function(req) {
     axios.get("https://time.akamai.com/") 
       .then(res => {
         const time = moment(res.data);
+        const unix = res.data;
         const gmtOffset = parseInt(req.query.gmt, 10);
         if (!gmtOffset) {
           resolve({
@@ -25,6 +26,7 @@ module.exports = function(req) {
         const newTime = moment.unix(time + (req.query.gmt * 3600));
         resolve({
           "gmt": gmtOffset,
+          "unix": unix,
           "hour": newTime.format("HH"),
           "minute": newTime.format("mm"),
           "second": newTime.format("ss"),
