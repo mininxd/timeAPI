@@ -1,0 +1,23 @@
+{
+  "name": "timeapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timeApi"
+  ],
+  "author": "mininxd",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/static": "^7.0.4",
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "fastify": "^4.27.0",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "path": "^0.12.7"
+  }
+}
