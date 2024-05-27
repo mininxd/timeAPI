@@ -6,8 +6,8 @@ module.exports = function(req) {
     axios.get("https://time.akamai.com/") 
       .then(res => {
         const time = moment(res.data);
-        const unix = res.data;
-        const gmtOffset = parseInt(req.query.gmt, 10);
+        const gmtOffset = req.query.gmt;
+        const unix = (res.data + (3600 * gmtOffset));
         if (!gmtOffset) {
           resolve({
             "info": "query required",
